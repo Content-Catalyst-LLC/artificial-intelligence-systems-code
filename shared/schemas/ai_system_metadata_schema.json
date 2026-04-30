@@ -1,0 +1,51 @@
+{
+  "title": "AI System Metadata Schema",
+  "type": "object",
+  "required": [
+    "system_id",
+    "system_name",
+    "purpose",
+    "owner",
+    "risk_tier",
+    "model_family",
+    "training_data",
+    "evaluation_data",
+    "human_oversight"
+  ],
+  "properties": {
+    "system_id": {
+      "type": "string"
+    },
+    "system_name": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string"
+    },
+    "risk_tier": {
+      "type": "string",
+      "enum": ["low", "medium", "high", "critical"]
+    },
+    "model_family": {
+      "type": "string"
+    },
+    "training_data": {
+      "type": "string"
+    },
+    "evaluation_data": {
+      "type": "string"
+    },
+    "human_oversight": {
+      "type": "string"
+    },
+    "known_limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

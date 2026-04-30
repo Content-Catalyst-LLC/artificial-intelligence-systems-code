@@ -1,0 +1,4 @@
+risk_id,system_id,risk_category,risk_description,likelihood,severity,mitigation,residual_risk,owner,review_date
+RISK-001,AIS-001,Data Quality,Synthetic placeholder risk for missing or biased data documentation,Medium,High,Require dataset documentation and validation before deployment,Medium,AI Governance Lead,2026-06-30
+RISK-002,AIS-001,Monitoring,Model may drift after deployment,Medium,Medium,Monitor drift signals and retrain only after governance review,Low,MLOps Lead,2026-06-30
+RISK-003,AIS-001,Human Oversight,Users may over-rely on model outputs,Medium,High,Use interface warnings review procedures and escalation pathways,Medium,Product Owner,2026-06-30
