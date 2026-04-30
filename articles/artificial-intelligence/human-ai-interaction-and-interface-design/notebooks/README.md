@@ -1,0 +1,8 @@
+# Advanced Jupyter Notebooks
+
+Recommended notebook sequence:
+
+1. 01_human_ai_interaction_reliance_quality_lab.ipynb
+2. 02_interface_clarity_uncertainty_and_explanation_lab.ipynb
+3. 03_automation_bias_algorithm_aversion_and_workflow_lab.ipynb
+4. 04_governance_contestability_and_design_review_lab.ipynb
