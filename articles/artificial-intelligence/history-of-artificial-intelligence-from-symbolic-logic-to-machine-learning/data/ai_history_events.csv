@@ -1,0 +1,9 @@
+year,event,paradigm
+1950,Turing publishes Computing Machinery and Intelligence,computation
+1956,Dartmouth workshop names artificial intelligence,symbolic_ai
+1970,Symbolic AI and search methods dominate early research,symbolic_ai
+1980,Expert systems expand in organizational settings,expert_systems
+1990,Statistical learning becomes increasingly central,statistical_learning
+2012,Deep learning breakthrough era accelerates,deep_learning
+2017,Transformer architecture reshapes sequence modeling,deep_learning
+2022,Generative AI enters broad public use,systems_scale_ai
