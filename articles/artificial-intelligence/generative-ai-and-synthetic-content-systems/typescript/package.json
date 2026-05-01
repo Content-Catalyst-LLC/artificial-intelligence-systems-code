@@ -1,0 +1,12 @@
+{
+  "name": "synthetic-content-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for generative AI synthetic content governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
