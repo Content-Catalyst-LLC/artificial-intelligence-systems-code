@@ -1,0 +1,6 @@
+asset_id,metric_name,metric_value,sensor_health,latency_seconds
+A001,pressure_drop,0.22,0.91,4.2
+A002,vibration_index,0.41,0.64,3.8
+A003,flow_rate,123.4,0.88,45.0
+A004,pressure_drop,0.18,0.93,2.1
+A005,temperature,38.2,0.72,8.7
