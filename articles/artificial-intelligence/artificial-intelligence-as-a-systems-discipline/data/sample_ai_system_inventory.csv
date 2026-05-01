@@ -1,0 +1,6 @@
+system_id,risk_tier,governance_readiness,monitoring_coverage,human_oversight
+AI-SYS-001,low,0.82,0.76,0.88
+AI-SYS-002,high,0.52,0.61,0.44
+AI-SYS-003,medium,0.39,0.72,0.66
+AI-SYS-004,high,0.71,0.33,0.82
+AI-SYS-005,medium,0.68,0.58,0.73
