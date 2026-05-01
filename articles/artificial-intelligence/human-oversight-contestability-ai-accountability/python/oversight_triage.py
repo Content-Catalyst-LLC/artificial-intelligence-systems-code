@@ -37,18 +37,14 @@ def apply_escalation_rule(
     """Apply a transparent governance escalation rule."""
     cases = cases.copy()
 
-    cases["human_review_required"] = (
+    cases["escalate"] = (
         (cases["expected_risk"] >= risk_threshold)
         | (cases["uncertainty"] >= uncertainty_threshold)
         | (cases["rights_sensitive"] == 1)
         | (cases["vulnerable_context"] == 1)
     )
 
-    cases["route"] = np.where(
-        cases["human_review_required"],
-        "human_review",
-        "standard_processing",
-    )
+    cases["route"] = np.where(cases["escalate"], "human_review", "standard_processing")
     return cases
 
 
@@ -81,7 +77,7 @@ def main() -> None:
     summary.to_csv(output_dir / "oversight_triage_summary.csv", index=False)
 
     print(summary)
-    print(f"Overall review rate: {cases['human_review_required'].mean():.2%}")
+    print(f"Overall escalation rate: {cases['escalate'].mean():.2%}")
 
 
 if __name__ == "__main__":

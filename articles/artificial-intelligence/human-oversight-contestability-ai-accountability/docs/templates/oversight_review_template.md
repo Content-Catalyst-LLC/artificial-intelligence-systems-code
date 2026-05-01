@@ -28,7 +28,7 @@
 - Rationale:
 
 ## Follow-Up
-- Affected person notified:
+- Applicant or affected person notified:
 - Appeal pathway provided:
 - Record correction required:
 - System issue detected:
