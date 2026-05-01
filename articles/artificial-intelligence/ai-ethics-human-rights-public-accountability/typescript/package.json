@@ -1,0 +1,12 @@
+{
+  "name": "ai-rights-governance-validator",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start": "ts-node src/validateRightsGovernanceRecord.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.0.0"
+  }
+}
