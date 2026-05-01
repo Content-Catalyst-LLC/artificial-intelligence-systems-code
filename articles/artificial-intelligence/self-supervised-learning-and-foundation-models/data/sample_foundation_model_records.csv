@@ -1,0 +1,6 @@
+run_id,provenance_score,privacy_risk,bias_risk,governance_readiness,broad_reuse
+SSL-001,0.82,0.12,0.22,0.81,true
+SSL-002,0.43,0.18,0.31,0.72,true
+SSL-003,0.76,0.51,0.28,0.80,false
+SSL-004,0.64,0.22,0.49,0.68,true
+SSL-005,0.88,0.10,0.18,0.42,true
