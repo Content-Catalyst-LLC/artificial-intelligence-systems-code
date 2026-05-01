@@ -1,0 +1,9 @@
+event_id,predicted_probability,uncertainty,observed_outcome,region,review_required
+evt_001,0.82,0.18,1,north,false
+evt_002,0.41,0.37,1,south,true
+evt_003,0.74,0.22,0,east,false
+evt_004,0.33,0.44,1,west,true
+evt_005,0.91,0.12,1,north,false
+evt_006,0.28,0.29,0,south,false
+evt_007,0.63,0.35,1,east,true
+evt_008,0.19,0.52,0,west,true

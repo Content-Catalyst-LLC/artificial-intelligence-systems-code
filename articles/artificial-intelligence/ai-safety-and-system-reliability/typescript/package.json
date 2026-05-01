@@ -1,0 +1,12 @@
+{
+  "name": "ai-safety-reliability-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for AI safety and system reliability monitoring.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

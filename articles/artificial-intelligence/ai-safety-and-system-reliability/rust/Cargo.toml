@@ -1,0 +1,10 @@
+[package]
+name = "ai_safety_reliability_cli"
+version = "0.1.0"
+edition = "2021"
+description = "Dependency-light Rust CLI for validating AI safety event logs."
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
