@@ -1,0 +1,12 @@
+{
+  "name": "synthetic-evaluation-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for synthetic data and simulation evaluation governance.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

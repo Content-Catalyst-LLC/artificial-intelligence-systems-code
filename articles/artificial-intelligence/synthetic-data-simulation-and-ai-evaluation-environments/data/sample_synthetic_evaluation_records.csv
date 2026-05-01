@@ -1,0 +1,7 @@
+record_id,fidelity_risk,utility_gap,privacy_proximity_risk,rare_case_coverage_gap,sim_to_real_gap,review_required
+SYN-EVAL-001,0.08,0.02,0.01,0.02,0.06,false
+SYN-EVAL-002,0.28,0.03,0.02,0.02,0.05,true
+SYN-EVAL-003,0.10,0.07,0.02,0.01,0.08,true
+SYN-EVAL-004,0.06,0.02,0.08,0.02,0.04,true
+SYN-EVAL-005,0.12,0.03,0.02,0.08,0.07,true
+SYN-EVAL-006,0.13,0.03,0.02,0.02,0.22,true
