@@ -1,0 +1,12 @@
+{
+  "name": "llm-foundation-system-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for LLM foundation model system governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
