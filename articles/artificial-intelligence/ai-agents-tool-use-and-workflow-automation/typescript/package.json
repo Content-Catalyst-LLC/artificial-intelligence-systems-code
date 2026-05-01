@@ -1,0 +1,12 @@
+{
+  "name": "agent-workflow-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for AI agent workflow governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
