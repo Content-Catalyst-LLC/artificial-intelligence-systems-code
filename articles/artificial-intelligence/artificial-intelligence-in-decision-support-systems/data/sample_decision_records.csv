@@ -1,0 +1,6 @@
+option_id,predicted_risk,uncertainty,expected_utility,human_review_required
+A001,0.42,0.18,51.2,false
+A002,0.77,0.34,66.8,true
+A003,0.31,0.39,22.5,false
+A004,0.58,0.21,44.9,false
+A005,1.12,0.16,37.1,false
