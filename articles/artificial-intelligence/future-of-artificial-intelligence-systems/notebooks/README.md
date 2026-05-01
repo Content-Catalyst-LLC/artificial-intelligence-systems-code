@@ -1,0 +1,10 @@
+# Advanced Jupyter Notebooks
+
+Recommended notebook sequence:
+
+1. 01_scaling_laws_compute_efficiency_and_capability_trajectories_lab.ipynb
+2. 02_system_fitness_governance_capacity_and_responsible_scaling_lab.ipynb
+3. 03_distributed_intelligence_platform_power_and_systemic_risk_lab.ipynb
+4. 04_future_scenarios_constraints_and_institutional_capacity_lab.ipynb
+
+These notebooks are designed as guided labs with conceptual framing, runnable code, interpretation notes, and governance extensions.
