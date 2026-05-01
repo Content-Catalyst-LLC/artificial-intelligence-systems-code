@@ -1,0 +1,7 @@
+record_id,learning_gain,independent_transfer,assistance_gap,feedback_quality,privacy_risk,review_required
+LEARN-MON-001,0.14,0.68,0.08,0.72,0.22,false
+LEARN-MON-002,0.02,0.61,0.09,0.66,0.24,true
+LEARN-MON-003,0.11,0.46,0.14,0.62,0.30,true
+LEARN-MON-004,0.15,0.66,0.25,0.70,0.26,true
+LEARN-MON-005,0.12,0.63,0.10,0.34,0.20,true
+LEARN-MON-006,0.10,0.60,0.12,0.60,0.52,true
