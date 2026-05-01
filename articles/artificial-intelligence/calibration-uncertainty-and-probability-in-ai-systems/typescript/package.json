@@ -1,0 +1,12 @@
+{
+  "name": "calibration-uncertainty-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for calibration and uncertainty governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

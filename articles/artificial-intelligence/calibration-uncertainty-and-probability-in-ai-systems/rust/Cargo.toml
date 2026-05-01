@@ -1,0 +1,10 @@
+[package]
+name = "calibration_uncertainty_validator"
+version = "0.1.0"
+edition = "2021"
+description = "Rust CLI for validating calibration and uncertainty monitoring records."
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
