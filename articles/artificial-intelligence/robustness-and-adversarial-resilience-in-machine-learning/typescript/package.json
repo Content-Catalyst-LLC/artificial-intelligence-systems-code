@@ -1,0 +1,12 @@
+{
+  "name": "adversarial-resilience-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for robustness and adversarial resilience governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

@@ -1,0 +1,7 @@
+eval_id,clean_performance,adversarial_performance,attack_success_rate,containment_score,recovery_score,incident_severity,review_required
+ROBUST-EVAL-001,0.92,0.86,0.08,0.88,0.84,1,false
+ROBUST-EVAL-002,0.91,0.62,0.22,0.82,0.80,2,true
+ROBUST-EVAL-003,0.89,0.79,0.42,0.85,0.77,2,true
+ROBUST-EVAL-004,0.93,0.84,0.12,0.54,0.79,2,true
+ROBUST-EVAL-005,0.88,0.80,0.14,0.76,0.52,2,true
+ROBUST-EVAL-006,0.90,0.82,0.18,0.80,0.74,4,true
