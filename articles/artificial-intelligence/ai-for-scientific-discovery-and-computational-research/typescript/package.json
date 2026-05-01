@@ -1,0 +1,12 @@
+{
+  "name": "scientific-discovery-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for AI-assisted scientific discovery governance review.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
