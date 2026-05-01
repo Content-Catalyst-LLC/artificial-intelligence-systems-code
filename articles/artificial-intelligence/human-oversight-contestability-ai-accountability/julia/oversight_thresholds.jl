@@ -1,8 +1,5 @@
-# Oversight threshold sensitivity analysis in Julia
-
 using Random
 using Statistics
-using DelimitedFiles
 
 Random.seed!(42)
 
@@ -18,15 +15,15 @@ uncertainty_threshold = 0.55
 results = []
 
 for threshold in risk_thresholds
-    escalate = (expected_risk .>= threshold) .| (uncertainty .>= uncertainty_threshold)
-    push!(results, (threshold, mean(escalate)))
+    review = (expected_risk .>= threshold) .| (uncertainty .>= uncertainty_threshold)
+    push!(results, (threshold, mean(review)))
 end
 
 output_dir = joinpath(@__DIR__, "..", "outputs")
 mkpath(output_dir)
 
 open(joinpath(output_dir, "julia_threshold_sensitivity.csv"), "w") do io
-    println(io, "risk_threshold,escalation_rate")
+    println(io, "risk_threshold,review_rate")
     for row in results
         println(io, "$(row[1]),$(row[2])")
     end

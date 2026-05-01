@@ -1,6 +1,3 @@
-// Simple threshold checker for AI oversight routing.
-// This example demonstrates governance logic in a small Rust CLI.
-
 fn should_escalate(
     expected_risk: f64,
     uncertainty: f64,

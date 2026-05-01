@@ -1,6 +1,5 @@
--- AI accountability and contestability schema
--- This SQL file is for documentation and prototyping.
--- It avoids vendor-specific features where possible.
+-- AI accountability and contestability schema.
+-- This file is intended for educational governance prototyping.
 
 CREATE TABLE ai_systems (
     system_id INTEGER PRIMARY KEY,

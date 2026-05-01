@@ -1,5 +1,3 @@
-// Simple TypeScript validator for an AI oversight governance record.
-
 type GovernanceRecord = {
   caseId: string;
   expectedRisk: number;
@@ -13,20 +11,22 @@ function validateRecord(record: GovernanceRecord): string[] {
   const errors: string[] = [];
 
   if (!record.caseId) errors.push("Missing caseId.");
+
   if (record.expectedRisk < 0 || record.expectedRisk > 1) {
     errors.push("expectedRisk must be between 0 and 1.");
   }
+
   if (record.uncertainty < 0 || record.uncertainty > 1) {
     errors.push("uncertainty must be between 0 and 1.");
   }
 
-  const shouldEscalate =
+  const shouldReview =
     record.expectedRisk >= 0.18 ||
     record.uncertainty >= 0.55 ||
     record.rightsSensitive ||
     record.vulnerableContext;
 
-  if (shouldEscalate && record.route !== "human_review") {
+  if (shouldReview && record.route !== "human_review") {
     errors.push("Record should route to human_review under governance rules.");
   }
 

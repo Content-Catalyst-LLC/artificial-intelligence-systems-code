@@ -1,6 +1,3 @@
-// High-throughput expected-risk scoring example for AI oversight.
-// Compile with: g++ -std=c++17 risk_scorer.cpp -o risk_scorer
-
 #include <iostream>
 #include <vector>
 
@@ -8,7 +5,7 @@ double expected_risk(double harm_probability, double harm_impact) {
     return harm_probability * harm_impact;
 }
 
-bool should_escalate(
+bool should_review(
     double expected_risk_value,
     double uncertainty,
     bool rights_sensitive,
@@ -30,11 +27,11 @@ int main() {
 
     for (size_t i = 0; i < harm_probabilities.size(); ++i) {
         double risk = expected_risk(harm_probabilities[i], harm_impacts[i]);
-        bool escalate = should_escalate(risk, uncertainties[i], false, false);
+        bool review = should_review(risk, uncertainties[i], false, false);
 
         std::cout << "Case " << i + 1
                   << " risk=" << risk
-                  << " escalate=" << escalate
+                  << " review=" << review
                   << std::endl;
     }
 

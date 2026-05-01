@@ -4,7 +4,7 @@ This repository folder supports the Sustainable Catalyst article:
 
 **Human Oversight, Contestability, and AI Accountability**
 
-It provides reproducible examples for oversight triage, contestability monitoring, appeal analytics, accountability documentation, and governance reporting.
+It provides reproducible examples for oversight triage, contestability monitoring, appeal analytics, accountability documentation, reviewer workload analysis, incident reporting, audit checklists, and governance reporting.
 
 ## Contents
 
