@@ -1,0 +1,10 @@
+[package]
+name = "adaptation_metadata_validator"
+version = "0.1.0"
+edition = "2021"
+description = "Rust CLI for validating model adaptation metadata and governance thresholds."
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

@@ -1,0 +1,6 @@
+run_id,method,transfer_gain,retention_score,sensitive_domain
+ADAPT-001,lora,0.08,0.92,false
+ADAPT-002,full_fine_tuning,0.12,0.76,false
+ADAPT-003,qlora,0.06,0.89,true
+ADAPT-004,adapter_tuning,-0.02,0.93,false
+ADAPT-005,unknown_method,0.04,0.88,false
