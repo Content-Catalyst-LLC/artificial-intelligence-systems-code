@@ -1,0 +1,5 @@
+explanation_id,stability_score,fidelity_score,method_name,causal_review_required
+exp_001,0.82,0.91,local_surrogate,false
+exp_002,0.66,0.87,counterfactual,true
+exp_003,0.74,0.79,feature_attribution,true
+exp_004,0.91,0.93,transparent_baseline,false
