@@ -1,0 +1,12 @@
+{
+  "name": "ai-observability-dashboard",
+  "version": "0.1.0",
+  "description": "TypeScript dashboard logic for model monitoring, drift, and AI observability.",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
