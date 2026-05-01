@@ -1,0 +1,6 @@
+object_id,embedding_dimension,embedding_norm,similarity_metric,review_required
+D001,384,1.00,cosine,false
+D002,384,0.98,cosine,false
+D003,384,1.24,cosine,true
+D004,0,1.00,cosine,true
+D005,384,1.00,unsupported,true
