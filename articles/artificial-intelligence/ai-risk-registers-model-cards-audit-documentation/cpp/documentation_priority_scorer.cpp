@@ -8,8 +8,14 @@ double residual_risk(double likelihood, double impact, double mitigation_strengt
     return likelihood * impact * (1.0 - mitigation_strength);
 }
 
-double documentation_priority(double residual_risk_value, double documentation_completeness) {
-    return residual_risk_value * (1.0 - documentation_completeness);
+double documentation_priority(
+    double residual_risk_value,
+    double documentation_completeness,
+    double staleness_score
+) {
+    return residual_risk_value *
+           (1.0 - documentation_completeness) *
+           (1.0 + 0.25 * staleness_score);
 }
 
 std::string priority_band(double score) {
@@ -33,10 +39,11 @@ int main() {
     std::vector<double> impact = {0.90, 0.85, 0.65};
     std::vector<double> mitigation = {0.45, 0.50, 0.35};
     std::vector<double> completeness = {0.60, 0.55, 0.40};
+    std::vector<double> staleness = {0.50, 1.00, 1.80};
 
     for (size_t i = 0; i < risks.size(); ++i) {
         double risk = residual_risk(likelihood[i], impact[i], mitigation[i]);
-        double priority = documentation_priority(risk, completeness[i]);
+        double priority = documentation_priority(risk, completeness[i], staleness[i]);
 
         std::cout << risks[i]
                   << " residual_risk=" << risk

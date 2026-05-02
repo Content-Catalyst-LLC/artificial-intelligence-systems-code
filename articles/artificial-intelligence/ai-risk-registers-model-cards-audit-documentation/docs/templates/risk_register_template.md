@@ -16,11 +16,14 @@
 - Existing controls:
 - Mitigation strength:
 - Residual risk:
+- Documentation completeness:
+- Documentation priority:
 - Risk band:
 
 ## Ownership
 - Risk owner:
 - Mitigation plan:
 - Review date:
+- Next review date:
 - Status:
 - Escalation required:

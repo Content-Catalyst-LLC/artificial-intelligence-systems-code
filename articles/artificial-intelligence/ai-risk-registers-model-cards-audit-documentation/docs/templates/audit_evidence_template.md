@@ -17,6 +17,11 @@
 - Review status:
 - Reviewer:
 
+## Access and Retention
+- Access level:
+- Retention period:
+- Privacy or security considerations:
+
 ## Notes
 - Audit relevance:
 - Related risks:

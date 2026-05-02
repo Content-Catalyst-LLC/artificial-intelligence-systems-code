@@ -13,6 +13,7 @@
 - Who or what was affected?
 - Related risk-register item:
 - Related model-card section:
+- Related system-card section:
 - Related audit evidence:
 
 ## Response
@@ -22,3 +23,4 @@
 - Documentation updated:
 - Monitoring updated:
 - Resolved date:
+- Verification status:

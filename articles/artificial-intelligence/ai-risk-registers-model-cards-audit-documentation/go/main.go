@@ -14,6 +14,8 @@ type DocumentationGovernanceStatus struct {
 	AuditGap                  float64 `json:"audit_gap"`
 	OpenHighRisks             int     `json:"open_high_risks"`
 	StaleModelCards           int     `json:"stale_model_cards"`
+	StaleSystemCards          int     `json:"stale_system_cards"`
+	UnreviewedIncidents       int     `json:"unreviewed_incidents"`
 	Status                    string  `json:"status"`
 }
 
@@ -24,6 +26,8 @@ func statusHandler(w http.ResponseWriter, r *http.Request) {
 		AuditGap:                  0.36,
 		OpenHighRisks:             3,
 		StaleModelCards:           1,
+		StaleSystemCards:          1,
+		UnreviewedIncidents:       2,
 		Status:                    "documentation_review_required",
 	}
 
