@@ -2,4 +2,4 @@
 
 Place raw media, provenance, source, correction, monitoring, or governance data here.
 
-Do not commit sensitive, personal, confidential, private newsroom, platform-internal, or legally restricted data.
+Do not commit sensitive, personal, confidential, private newsroom, platform-internal, unpublished source, legally restricted, security-sensitive, election-sensitive, harassment-related, or nonconsensual media data.

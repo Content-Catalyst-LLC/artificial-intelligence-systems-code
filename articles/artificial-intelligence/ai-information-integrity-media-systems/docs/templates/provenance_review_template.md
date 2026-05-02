@@ -7,6 +7,7 @@
 - Publisher or creator:
 - Publication date:
 - AI-generated or AI-assisted:
+- Synthetic media:
 
 ## Provenance
 - Provenance available:
@@ -14,12 +15,17 @@
 - Creator claim:
 - Edit history:
 - Cryptographic signature:
-- Verification status:
 - Chain of custody:
+- Verification status:
+- Metadata preserved:
+- Platform display visible:
 
-## Review
+## Risk Review
 - Source credibility:
+- Claim uncertainty:
 - Public impact:
+- Impersonation risk:
+- Evidentiary misuse risk:
 - Risk band:
 - Required action:
 - Reviewer:

@@ -5,6 +5,7 @@
 - URL or identifier:
 - Publication date:
 - Original reach:
+- Source:
 - Issue identified:
 
 ## Correction
@@ -12,6 +13,7 @@
 - Correction date:
 - Correction reach:
 - Correction effectiveness:
+- Correction attached to original:
 - Source notified:
 - Platform action:
 
@@ -20,3 +22,4 @@
 - Documentation updated:
 - Monitoring updated:
 - Public report required:
+- Reviewer:

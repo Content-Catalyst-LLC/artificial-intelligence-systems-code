@@ -9,13 +9,17 @@ double information_integrity_risk(
     double amplification_risk,
     double public_impact,
     double provenance_gap,
-    double verification_strength
+    double verification_strength,
+    double correction_gap,
+    double human_review_gap
 ) {
-    return 0.25 * claim_uncertainty
-        + 0.20 * amplification_risk
-        + 0.20 * public_impact
-        + 0.20 * provenance_gap
-        + 0.15 * (1.0 - verification_strength);
+    return 0.22 * claim_uncertainty
+        + 0.18 * amplification_risk
+        + 0.18 * public_impact
+        + 0.18 * provenance_gap
+        + 0.14 * (1.0 - verification_strength)
+        + 0.05 * correction_gap
+        + 0.05 * human_review_gap;
 }
 
 std::string risk_band(double score) {
@@ -40,6 +44,8 @@ int main() {
     std::vector<double> impact = {0.70, 0.85, 0.90};
     std::vector<double> provenance_gap = {0.0, 1.0, 1.0};
     std::vector<double> verification = {0.80, 0.25, 0.30};
+    std::vector<double> correction_gap = {0.0, 1.0, 1.0};
+    std::vector<double> human_review_gap = {0.0, 1.0, 1.0};
 
     for (size_t i = 0; i < content.size(); ++i) {
         double score = information_integrity_risk(
@@ -47,7 +53,9 @@ int main() {
             amplification[i],
             impact[i],
             provenance_gap[i],
-            verification[i]
+            verification[i],
+            correction_gap[i],
+            human_review_gap[i]
         );
 
         std::cout << content[i]

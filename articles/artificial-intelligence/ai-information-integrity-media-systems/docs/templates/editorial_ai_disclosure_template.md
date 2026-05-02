@@ -14,13 +14,22 @@
 - Summarization:
 - Drafting:
 - Image generation:
+- Audio generation:
 - Data analysis:
+- Source comparison:
 - Other:
 
 ## Human Review
 - Reviewed by:
 - Fact-checked:
 - Sources verified:
+- Dates verified:
 - Corrections process:
 - Disclosure required:
 - Disclosure text:
+
+## Editorial Accountability
+- Final editor:
+- Public correction pathway:
+- Source attribution:
+- Original reporting credited:
