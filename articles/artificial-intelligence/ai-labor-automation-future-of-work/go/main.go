@@ -14,6 +14,7 @@ type WorkforceAIStatus struct {
 	MeanJobQuality         float64 `json:"mean_job_quality"`
 	MeanTrainingAccess     float64 `json:"mean_training_access"`
 	MeanMonitoringBurden   float64 `json:"mean_monitoring_burden"`
+	MeanWorkerVoice        float64 `json:"mean_worker_voice"`
 	TransitionPriorityRate float64 `json:"transition_priority_rate"`
 	Status                 string  `json:"status"`
 }
@@ -25,6 +26,7 @@ func statusHandler(w http.ResponseWriter, r *http.Request) {
 		MeanJobQuality:         0.52,
 		MeanTrainingAccess:     0.46,
 		MeanMonitoringBurden:   0.61,
+		MeanWorkerVoice:        0.42,
 		TransitionPriorityRate: 0.24,
 		Status:                 "worker_consultation_required",
 	}

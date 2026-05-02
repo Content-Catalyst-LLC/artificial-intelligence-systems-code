@@ -3,6 +3,7 @@
 ## Monitoring Period
 - System:
 - Role group:
+- Employment status:
 - Date range:
 
 ## Indicators
@@ -13,6 +14,8 @@
 - Health and safety:
 - Worker voice:
 - Monitoring burden:
+- Workload intensity:
+- Schedule predictability:
 - Training access:
 - Job quality score:
 
@@ -21,3 +24,5 @@
 - Training required:
 - Governance review required:
 - Worker consultation required:
+- Privacy review required:
+- Gain-sharing review required:

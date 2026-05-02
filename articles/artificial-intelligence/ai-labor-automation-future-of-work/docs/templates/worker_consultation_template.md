@@ -6,6 +6,8 @@
 - Worker group:
 - Representative or facilitator:
 - Deployment stage:
+- Consultation method:
+- Accessibility support:
 
 ## Concerns Raised
 - Job security:
@@ -16,10 +18,13 @@
 - Bias or unfair evaluation:
 - Scheduling:
 - Health and safety:
+- Discipline or termination:
+- Productivity expectations:
 - Other:
 
-## Response
+## Governance Response
 - Changes made:
 - Safeguards added:
 - Issues unresolved:
+- Feedback loop completed:
 - Follow-up date:

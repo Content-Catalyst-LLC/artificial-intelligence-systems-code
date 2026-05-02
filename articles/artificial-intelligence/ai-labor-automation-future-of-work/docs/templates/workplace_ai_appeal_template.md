@@ -14,11 +14,15 @@
 - Task assignment:
 - Monitoring or surveillance:
 - Promotion or compensation:
+- Training access:
+- Workload expectation:
 - Other:
 
 ## Review
 - Evidence reviewed:
 - Human reviewer:
+- Worker explanation:
 - Outcome:
 - Corrective action:
+- System-level change required:
 - Resolved date:

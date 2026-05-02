@@ -12,6 +12,10 @@ double augmentation_potential(double ai_capability, double human_judgment, doubl
     return ai_capability * human_judgment * task_value;
 }
 
+double deskilling_risk(double ai_capability, double training_function, double human_judgment) {
+    return ai_capability * training_function * (1.0 - human_judgment);
+}
+
 std::string classify_task(double automation, double augmentation, double human_judgment) {
     if (automation > 0.35 && human_judgment < 0.40) {
         return "candidate_for_careful_automation";
@@ -35,14 +39,17 @@ int main() {
     std::vector<double> routineness = {0.70, 0.20, 0.90};
     std::vector<double> human_judgment = {0.35, 0.90, 0.20};
     std::vector<double> task_value = {0.65, 0.95, 0.40};
+    std::vector<double> training_function = {0.40, 0.85, 0.35};
 
     for (size_t i = 0; i < tasks.size(); ++i) {
         double automation = automation_pressure(ai_capability[i], routineness[i], human_judgment[i]);
         double augmentation = augmentation_potential(ai_capability[i], human_judgment[i], task_value[i]);
+        double deskilling = deskilling_risk(ai_capability[i], training_function[i], human_judgment[i]);
 
         std::cout << tasks[i]
                   << " automation_pressure=" << automation
                   << " augmentation_potential=" << augmentation
+                  << " deskilling_risk=" << deskilling
                   << " category=" << classify_task(automation, augmentation, human_judgment[i])
                   << std::endl;
     }
