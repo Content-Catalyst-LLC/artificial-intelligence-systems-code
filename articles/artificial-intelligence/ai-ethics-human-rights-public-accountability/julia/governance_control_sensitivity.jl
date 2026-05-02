@@ -22,16 +22,17 @@ for control_strength in control_values
         0.20 .* institutional_power
 
     residual = inherent .* (1 - control_strength)
-    push!(results, (control_strength, mean(residual)))
+    high_risk_share = mean(residual .>= 0.35)
+    push!(results, (control_strength, mean(residual), maximum(residual), high_risk_share))
 end
 
 output_dir = joinpath(@__DIR__, "..", "outputs")
 mkpath(output_dir)
 
 open(joinpath(output_dir, "julia_governance_control_sensitivity.csv"), "w") do io
-    println(io, "governance_control_strength,mean_residual_rights_risk")
+    println(io, "governance_control_strength,mean_residual_rights_risk,max_residual_rights_risk,high_risk_share")
     for row in results
-        println(io, "$(row[1]),$(row[2])")
+        println(io, "$(row[1]),$(row[2]),$(row[3]),$(row[4])")
     end
 end
 

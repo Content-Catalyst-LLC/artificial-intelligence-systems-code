@@ -6,6 +6,8 @@ type RightsGovernanceRecord = {
   explanationProvided: boolean;
   appealAvailable: boolean;
   remedyAvailable: boolean;
+  publicReportingAvailable: boolean;
+  stakeholderParticipationDocumented: boolean;
   residualRightsRisk: number;
 };
 
@@ -34,6 +36,14 @@ function validateRecord(record: RightsGovernanceRecord): string[] {
     errors.push("Affected people should receive an explanation.");
   }
 
+  if (record.residualRightsRisk >= 0.35 && !record.publicReportingAvailable) {
+    errors.push("High-risk public-interest systems should support public reporting.");
+  }
+
+  if (record.residualRightsRisk >= 0.35 && !record.stakeholderParticipationDocumented) {
+    errors.push("High-risk systems should document stakeholder participation.");
+  }
+
   return errors;
 }
 
@@ -43,6 +53,8 @@ const example: RightsGovernanceRecord = {
   explanationProvided: true,
   appealAvailable: true,
   remedyAvailable: true,
+  publicReportingAvailable: true,
+  stakeholderParticipationDocumented: true,
   residualRightsRisk: 0.38
 };
 

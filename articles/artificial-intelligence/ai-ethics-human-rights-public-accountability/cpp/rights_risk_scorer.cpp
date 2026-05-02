@@ -30,6 +30,10 @@ std::string risk_band(double score) {
     }
 }
 
+bool review_required(double score, bool appeal_available, bool remedy_available) {
+    return score >= 0.35 || !appeal_available || !remedy_available;
+}
+
 int main() {
     std::vector<std::string> use_cases = {
         "public_benefits_review",
@@ -42,6 +46,8 @@ int main() {
     std::vector<double> vulnerability = {0.90, 0.70, 0.75};
     std::vector<double> institutional_power = {0.95, 0.75, 0.70};
     std::vector<double> controls = {0.45, 0.50, 0.40};
+    std::vector<bool> appeal_available = {true, true, false};
+    std::vector<bool> remedy_available = {true, true, false};
 
     for (size_t i = 0; i < use_cases.size(); ++i) {
         double score = residual_rights_risk(
@@ -55,6 +61,11 @@ int main() {
         std::cout << use_cases[i]
                   << " residual_rights_risk=" << score
                   << " band=" << risk_band(score)
+                  << " review_required=" << review_required(
+                      score,
+                      appeal_available[i],
+                      remedy_available[i]
+                  )
                   << std::endl;
     }
 

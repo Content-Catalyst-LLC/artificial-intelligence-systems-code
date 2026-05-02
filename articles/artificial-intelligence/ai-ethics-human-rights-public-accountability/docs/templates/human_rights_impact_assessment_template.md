@@ -7,6 +7,8 @@
 - Deployment context:
 - Public or private setting:
 - Affected population:
+- Vendor or model provider:
+- Model or service version:
 
 ## Rights Potentially Affected
 - Equality and nondiscrimination:
@@ -19,6 +21,7 @@
 - Health:
 - Housing:
 - Democratic participation:
+- Environmental justice:
 - Other:
 
 ## Risk Analysis
@@ -30,6 +33,15 @@
 - Proxy discrimination concerns:
 - Automation bias concerns:
 - Privacy or surveillance concerns:
+- Administrative burden concerns:
+- Accessibility concerns:
+
+## Necessity and Proportionality
+- Is AI necessary for the stated purpose?
+- Were non-AI alternatives considered?
+- Are less intrusive alternatives available?
+- Are risks proportionate to benefits?
+- What uses are prohibited?
 
 ## Safeguards
 - Human oversight:
@@ -39,6 +51,7 @@
 - Monitoring:
 - Public reporting:
 - Independent audit:
+- Stakeholder participation:
 - Decommissioning criteria:
 
 ## Decision
@@ -48,3 +61,4 @@
 - Reject:
 - Required mitigations:
 - Review date:
+- Next review date:

@@ -25,8 +25,19 @@ fn risk_band(score: f64) -> &'static str {
     }
 }
 
+fn review_required(score: f64, appeal_available: bool, remedy_available: bool) -> bool {
+    score >= 0.35 || !appeal_available || !remedy_available
+}
+
 fn main() {
     let score = residual_rights_risk(0.35, 0.90, 0.90, 0.95, 0.45);
+    let appeal_available = true;
+    let remedy_available = true;
+
     println!("Residual rights risk: {:.3}", score);
     println!("Risk band: {}", risk_band(score));
+    println!(
+        "Governance review required: {}",
+        review_required(score, appeal_available, remedy_available)
+    );
 }

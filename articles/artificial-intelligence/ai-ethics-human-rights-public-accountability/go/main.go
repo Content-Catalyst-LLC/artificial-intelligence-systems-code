@@ -14,6 +14,7 @@ type PublicAccountabilityStatus struct {
 	AppealRate         float64 `json:"appeal_rate"`
 	RemedyRate         float64 `json:"remedy_rate"`
 	MeanRemedyDays     float64 `json:"mean_remedy_days"`
+	BurdenIndicator    float64 `json:"burden_indicator"`
 	Status             string  `json:"status"`
 }
 
@@ -24,6 +25,7 @@ func statusHandler(w http.ResponseWriter, r *http.Request) {
 		AppealRate:         0.12,
 		RemedyRate:         0.35,
 		MeanRemedyDays:     18.0,
+		BurdenIndicator:    0.41,
 		Status:             "monitoring_required",
 	}
 

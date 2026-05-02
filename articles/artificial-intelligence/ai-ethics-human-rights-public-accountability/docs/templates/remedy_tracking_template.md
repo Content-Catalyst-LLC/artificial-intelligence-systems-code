@@ -13,6 +13,8 @@
 - Procedural error:
 - Disparate impact concern:
 - Explanation failure:
+- Accessibility failure:
+- Administrative burden:
 - Other:
 
 ## Remedy
@@ -29,3 +31,9 @@
 - Review date:
 - Remedy date:
 - Days to remedy:
+
+## System Learning
+- Recurring issue:
+- Root cause:
+- System change required:
+- Monitoring update required:
