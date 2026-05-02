@@ -6,7 +6,10 @@
 - Owner:
 - Deployment context:
 - AI model or service:
+- Model version:
 - Connected tools:
+- Connected data sources:
+- Connected retrieval systems:
 
 ## Assets
 - Training data:
@@ -17,6 +20,8 @@
 - Tool permissions:
 - Logs:
 - User data:
+- Credentials or secrets:
+- Downstream systems:
 
 ## Threats
 - Data poisoning risk:
@@ -25,7 +30,17 @@
 - Excessive agency risk:
 - Supply-chain risk:
 - Model extraction or inversion risk:
+- Retrieval manipulation risk:
 - Availability or cost-exhaustion risk:
+- Vendor dependency risk:
+
+## Trust Boundaries
+- User input:
+- Retrieved content:
+- Tool outputs:
+- Internal data:
+- External APIs:
+- Human approval gates:
 
 ## Controls
 - Access control:
@@ -34,6 +49,7 @@
 - Logging:
 - Monitoring:
 - Output validation:
+- Retrieval-source validation:
 - Incident response:
 - Rollback:
 
@@ -43,3 +59,4 @@
 - High:
 - Accepted by:
 - Review date:
+- Next review date:

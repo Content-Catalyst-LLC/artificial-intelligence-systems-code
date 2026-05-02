@@ -7,3 +7,5 @@ This folder is reserved for expanded defensive notebooks, including:
 - control sensitivity analysis
 - incident trend analysis
 - tool-permission review
+- vendor security review
+- retrieval-source risk review

@@ -7,6 +7,7 @@
 - Tester:
 - Scope:
 - Authorization:
+- Environment:
 
 ## Finding
 - Finding category:
@@ -14,6 +15,8 @@
 - Description:
 - Affected component:
 - Evidence summary:
+- Reproducibility:
+- Potential impact:
 
 ## Remediation
 - Owner:
@@ -21,3 +24,4 @@
 - Status:
 - Retest date:
 - Residual risk:
+- Accepted by:

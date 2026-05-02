@@ -3,7 +3,10 @@
 
 set.seed(42)
 
-article_dir <- normalizePath(file.path(dirname(sys.frame(1)$ofile), ".."), mustWork = FALSE)
+args <- commandArgs(trailingOnly = FALSE)
+file_arg <- grep("^--file=", args, value = TRUE)
+script_path <- if (length(file_arg) > 0) sub("^--file=", "", file_arg[1]) else getwd()
+article_dir <- normalizePath(file.path(dirname(script_path), ".."), mustWork = FALSE)
 output_dir <- file.path(article_dir, "outputs")
 dir.create(output_dir, showWarnings = FALSE, recursive = TRUE)
 
@@ -15,14 +18,16 @@ events <- data.frame(
   tool_call_intensity = runif(n, 0, 1),
   sensitive_output_signal = runif(n, 0, 1),
   permission_risk = runif(n, 0, 1),
+  retrieval_anomaly_score = runif(n, 0, 1),
   control_strength = runif(n, 0.30, 0.90)
 )
 
 events$misuse_signal <-
-  0.30 * events$unusual_query_score +
-  0.25 * events$tool_call_intensity +
-  0.25 * events$sensitive_output_signal +
-  0.20 * events$permission_risk
+  0.25 * events$unusual_query_score +
+  0.20 * events$tool_call_intensity +
+  0.20 * events$sensitive_output_signal +
+  0.20 * events$permission_risk +
+  0.15 * events$retrieval_anomaly_score
 
 events$residual_risk <- events$misuse_signal * (1 - events$control_strength)
 
@@ -32,8 +37,16 @@ events$risk_band <- ifelse(
   ifelse(events$residual_risk < 0.30, "moderate", "high")
 )
 
+events$review_flag <- ifelse(
+  events$residual_risk >= 0.30 |
+    events$sensitive_output_signal >= 0.85 |
+    events$permission_risk >= 0.85,
+  1,
+  0
+)
+
 summary_table <- aggregate(
-  cbind(misuse_signal, residual_risk) ~ risk_band,
+  cbind(misuse_signal, residual_risk, review_flag) ~ risk_band,
   data = events,
   FUN = mean
 )

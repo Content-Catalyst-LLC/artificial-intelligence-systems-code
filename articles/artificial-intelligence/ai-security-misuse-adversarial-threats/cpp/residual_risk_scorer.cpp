@@ -20,19 +20,35 @@ std::string risk_band(double score) {
     }
 }
 
+bool review_required(double score, bool high_impact_action) {
+    return score >= 0.20 || high_impact_action;
+}
+
 int main() {
-    std::vector<std::string> assets = {"retrieval_index", "model_endpoint", "tool_api_gateway"};
+    std::vector<std::string> assets = {
+        "retrieval_index",
+        "model_endpoint",
+        "tool_api_gateway"
+    };
+
     std::vector<double> exposures = {0.75, 0.80, 0.90};
     std::vector<double> impacts = {0.75, 0.90, 0.95};
     std::vector<double> likelihoods = {0.60, 0.65, 0.70};
     std::vector<double> controls = {0.50, 0.65, 0.55};
+    std::vector<bool> high_impact = {false, false, true};
 
     for (size_t i = 0; i < assets.size(); ++i) {
-        double score = residual_risk(exposures[i], impacts[i], likelihoods[i], controls[i]);
+        double score = residual_risk(
+            exposures[i],
+            impacts[i],
+            likelihoods[i],
+            controls[i]
+        );
 
         std::cout << assets[i]
                   << " residual_risk=" << score
                   << " band=" << risk_band(score)
+                  << " review_required=" << review_required(score, high_impact[i])
                   << std::endl;
     }
 

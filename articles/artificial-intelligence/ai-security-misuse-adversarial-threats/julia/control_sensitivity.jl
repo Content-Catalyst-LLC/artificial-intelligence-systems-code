@@ -17,16 +17,16 @@ results = []
 for control_strength in control_values
     inherent_risk = exposure .* impact .* likelihood
     residual = inherent_risk .* (1 - control_strength)
-    push!(results, (control_strength, mean(residual)))
+    push!(results, (control_strength, mean(residual), maximum(residual)))
 end
 
 output_dir = joinpath(@__DIR__, "..", "outputs")
 mkpath(output_dir)
 
 open(joinpath(output_dir, "julia_control_sensitivity.csv"), "w") do io
-    println(io, "control_strength,mean_residual_risk")
+    println(io, "control_strength,mean_residual_risk,max_residual_risk")
     for row in results
-        println(io, "$(row[1]),$(row[2])")
+        println(io, "$(row[1]),$(row[2]),$(row[3])")
     end
 end
 
