@@ -4,9 +4,11 @@
 - [ ] Risk classification is current.
 - [ ] Human review authority is documented.
 - [ ] Reviewers can override or escalate.
+- [ ] Reviewer workload is monitored.
 - [ ] Appeal process is accessible.
 - [ ] Notice language is understandable.
 - [ ] Explanation templates are tested.
+- [ ] Decision records are retained.
 - [ ] Override rates are monitored.
 - [ ] Appeal rates are monitored.
 - [ ] Successful appeal rates are monitored.
@@ -15,3 +17,4 @@
 - [ ] Incidents are documented.
 - [ ] Corrective actions are tracked.
 - [ ] Vendor obligations are current.
+- [ ] Decommissioning authority is clear.

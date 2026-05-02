@@ -16,7 +16,9 @@
 - System paused:
 - Cases quarantined:
 - Affected people notified:
-- Regulator or governance body notified:
+- Governance body notified:
+- Vendor notified:
+- Regulator notified if required:
 
 ## Root Cause
 - Data issue:
@@ -25,6 +27,8 @@
 - Human oversight failure:
 - Vendor issue:
 - Policy gap:
+- Interface issue:
+- Workload issue:
 
 ## Corrective Action
 - Individual remedy:
@@ -32,3 +36,4 @@
 - Policy update:
 - Monitoring update:
 - Training update:
+- Audit follow-up:
